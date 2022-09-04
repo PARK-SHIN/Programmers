@@ -1,7 +1,6 @@
 function solution(phone_number) {
     var answer = '';
-    var phone = phone_number + "";
-    const size = phone.length;
+    const size = phone_number.length;
     
     
     console.log(size);
