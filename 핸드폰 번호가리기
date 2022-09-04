@@ -1,0 +1,17 @@
+function solution(phone_number) {
+    var answer = '';
+    var phone = phone_number + "";
+    const size = phone.length;
+    
+    
+    console.log(size);
+    
+    for(var i = 0; i < size; i++){
+        if((size-i) > 4){
+          answer +='*';
+        }else{
+            answer += phone_number.charAt(i);
+        }
+    }
+    return answer;
+}
