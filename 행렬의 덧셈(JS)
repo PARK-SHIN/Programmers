@@ -1,0 +1,16 @@
+function solution(arr1, arr2) {
+    var answer = [[]];
+    var a = arr1.length;
+    var b = arr1[0].length;
+    
+    for (var i=0; i<a; i++){
+        // 꼭 해줘야됨
+        answer[i] =[];
+        for(var j=0; j<b; j++){
+            // 열에 추가 해줘야 하기 때문에 '=' 말고 push
+            // answer[i] = (arr1[i][j] + arr2[i][j]);
+            answer[i].push(arr1[i][j] + arr2[i][j]);
+        }
+    }
+    return answer;
+}
