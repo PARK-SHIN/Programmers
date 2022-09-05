@@ -1,0 +1,19 @@
+function solution(x) {
+    var answer = true;
+    
+    const str = x + '';
+    const length = str.length;
+    var sumAll = 0;
+    
+    for(var i = 0; i < length; i++){
+        sumAll  += parseInt(str.charAt(i));
+    }
+    
+    if(x % sumAll != 0){
+        answer = false;
+    }
+    
+    
+    return answer;
+    
+}
