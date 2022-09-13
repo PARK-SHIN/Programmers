@@ -1,0 +1,26 @@
+function solution(s){
+    var toUpperCase = s.toUpperCase();
+    var length = toUpperCase.length;
+    var P = 0;
+    var Y = 0;
+    var answer = true;
+    
+    
+    for(var i = 0;  i < length; i++){
+        if(toUpperCase.charAt(i) == 'P'){
+            P++;
+        } else if (toUpperCase.charAt(i) == 'Y'){
+            Y++;
+        }
+    }
+    
+    if(P != Y){
+        answer = false;
+    } else if(P == Y){
+        answer = true;
+    }
+    
+    
+
+    return answer;
+}
