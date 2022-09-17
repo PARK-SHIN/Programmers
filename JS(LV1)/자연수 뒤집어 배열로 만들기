@@ -1,0 +1,11 @@
+function solution(n) {
+    var answer = [];
+    var str = n.toString();
+
+    for(var i = 0;  i < str.length; i++){
+        answer.push(Number(str.charAt(i)));
+    }
+    
+    // 무작정 sort보다 reverse()
+    return answer.reverse();
+}
