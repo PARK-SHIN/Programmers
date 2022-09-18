@@ -1,0 +1,25 @@
+function solution(n) {
+//     var answer = 0;
+//     var str = n.toString();
+//     var arr = [];
+//     var val = '';
+    
+//     for(var i = 0; i < str.length; i++){
+//         arr.push(str.charAt(i))
+//     }
+//     arr.sort(function (a,b){return b-a});
+    
+//     for(var j = 0; j < str.length; j++){
+//         val += arr[j];
+//     }
+    
+//     return parseInt(val);
+    
+    const newN = n.toString();
+    const newArr = newN.split("").sort().reverse().join("");
+    
+    return parseInt(newArr);
+
+    
+    
+}
