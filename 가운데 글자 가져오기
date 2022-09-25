@@ -1,0 +1,6 @@
+function solution(s) {
+   
+    var val = Math.round(s.length / 2);
+   
+    return s.length%2 ==0 ? s.charAt(val-1) + s.charAt(val) : s.charAt(val-1)
+}
