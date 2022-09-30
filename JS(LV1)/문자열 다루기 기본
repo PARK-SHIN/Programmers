@@ -1,0 +1,13 @@
+function solution(s) {
+    
+    // JS에서 'e'를 숫자로 인식하는 경우가 있어서 테스트 하나 통과 못했다.
+    // return ((s.length === 4 || s.length === 6) && !isNaN(s)) ? true : false;
+    
+    if((s.length === 4 || s.length === 6) == false) return false;
+    
+    for(let i = 0; i < s.length; i++){
+        if(isNaN(Number(s.charAt(i))) == true) return false ;
+    }
+    return true;
+    
+}
