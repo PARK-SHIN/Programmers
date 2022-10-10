@@ -1,0 +1,14 @@
+function solution(n, arr1, arr2) {
+    var answer = [];
+    var val, code = ''; 
+
+    for(let i = 0; i < n; i++){
+        val = String(parseInt(arr1[i].toString(2).padStart(n, 0)) + parseInt(arr2[i].toString(2).padStart(n , 0))).padStart(n, '0');
+        for(let j = 0; j < n; j++){
+            code += val.charAt(j)==0 ? ' ' : '#';
+        }
+        answer.push(code);
+        code = '';        
+    }
+    return answer;
+}
