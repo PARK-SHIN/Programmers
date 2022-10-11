@@ -1,0 +1,31 @@
+function solution(sizes) {
+    var answer = 0;
+    var wsize = 0;
+    var hsize = 0;
+    
+    for(let i = 0; i < sizes.length; i++){
+        
+         if(sizes[i][0] > sizes[i][1]) {
+             if(wsize < sizes[i][0]){
+                 wsize = sizes[i][0];
+             } 
+             
+             if(hsize < sizes[i][1]){
+                 hsize = sizes[i][1];
+             }
+         } else{
+             if(wsize < sizes[i][1]){
+                 wsize = sizes[i][1];                 
+             }
+             
+             if(hsize < sizes[i][0]){
+                 hsize = sizes[i][0]
+             }
+         }
+             
+             
+             
+    }
+    
+    return wsize * hsize;
+}
