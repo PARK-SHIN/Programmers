@@ -1,1 +1,13 @@
-d
+function solution(numbers) {
+    var answer = [];
+
+    for(var i = 0; i < numbers.length; i++){
+        for(var j = 0; j < numbers.length; j++){
+            if(i != j) answer.push(parseInt(numbers[i] + numbers[j]));
+        }
+    }
+    const mySet = new Set(answer);
+    var answer2 = [...mySet];
+    
+    return answer2.sort((a,b) => a-b);
+}
